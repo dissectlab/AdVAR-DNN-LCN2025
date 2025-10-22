@@ -17,8 +17,8 @@ Make sure you have Python 3.9 or newer and install the required libraries:
 ```bash
 pip install -r requirements.txt
 ```
-
+```bash
 ### 2️⃣ Extract intermediate features
 python src/edge_cnsm2025/extract_intermediate_features.py
-
+```
 
