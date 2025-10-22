@@ -25,7 +25,7 @@ to capture how the network internally represents image content.
 
 These feature representations are saved as `.pkl` files and later used to train the VAE,  
 which generates the manipulated (adversarial) features analyzed in the paper.```bash
-
+```bash
 python src/edge_cnsm2025/extract_intermediate_features.py
 ```
 
