@@ -8,18 +8,13 @@ The project investigates how adversarially modified intermediate features can af
 distributed neural network inference. It includes scripts for feature extraction,  
 VAE training, and generation of manipulated (adversarial) representations.
 
-
+------------------------
 ## 🚀 How to Run the Code
 
-```markdown
 ### 1️⃣ Install dependencies
 Make sure you have Python 3.9 or newer and install the required libraries:
 
 ```bash
 pip install -r requirements.txt
-
-### 2️⃣ Extract intermediate features
-```bash
-python src/edge_cnsm2025/extract_intermediate_features.py
 
 
