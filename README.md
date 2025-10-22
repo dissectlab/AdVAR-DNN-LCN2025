@@ -17,4 +17,10 @@ Make sure you have Python 3.9 or newer and install the required libraries:
 ```bash
 pip install -r requirements.txt
 
+### 2️⃣ Extract intermediate features
+Run the feature extractor to collect intermediate CNN features:
+
+```bash
+python src/edge_cnsm2025/extract_intermediate_features.py
+
 
