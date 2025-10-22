@@ -18,13 +18,16 @@ Make sure you have Python 3.9 or newer and install the required libraries:
 pip install -r requirements.txt
 ```
 ### 2️⃣ Extract intermediate features
-This step uses the **retrained VGG19 model on CIFAR-100** saved as " vgg19_cifar100_retrained.h5 ", obtained through **transfer learning**.  
-The model was fine-tuned on CIFAR-100 to adapt pretrained ImageNet features for this dataset.  
-We extract intermediate feature maps from one of its convolutional layers (e.g., layer 20)  
-to capture how the network internally represents image content.  
 
-These feature representations are saved as `.pkl` files and later used to train the VAE,  
-which generates the manipulated (adversarial) features analyzed in the paper.```bash
+Before running Step 2, please download the **retrained VGG19 model on CIFAR-100** used in this project.  
+The model was obtained via **transfer learning**, where a pretrained ImageNet VGG19 was fine-tuned on the CIFAR-100 dataset.  
+It serves as the **feature extractor** in our experiments, providing intermediate representations  
+that are later used for training the Variational Autoencoder (VAE).
+
+🔗 [Download vgg19_cifar100_retrained.h5 from Google Drive]([https://drive.google.com/your-link-here](https://drive.google.com/file/d/1mGUZRYSpoXHNf--rVchxyUVKV5E67s4Z/view?usp=drive_link)
+
+After downloading, place the file in the following directory within the repository:
+
 ```bash
 python src/edge_cnsm2025/extract_intermediate_features.py
 ```
