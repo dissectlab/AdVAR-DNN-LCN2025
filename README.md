@@ -18,7 +18,7 @@ Make sure you have Python 3.9 or newer and install the required libraries:
 pip install -r requirements.txt
 ```
 ### 2️⃣ Extract intermediate features
-This step uses the **retrained VGG19 model on CIFAR-100**, obtained through **transfer learning**.  
+This step uses the **retrained VGG19 model on CIFAR-100** saved as " vgg19_cifar100_retrained.h5 ", obtained through **transfer learning**.  
 The model was fine-tuned on CIFAR-100 to adapt pretrained ImageNet features for this dataset.  
 We extract intermediate feature maps from one of its convolutional layers (e.g., layer 20)  
 to capture how the network internally represents image content.  
