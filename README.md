@@ -14,7 +14,7 @@ VAE training, and generation of manipulated (adversarial) representations.
 ### 1️⃣ Install dependencies
 Make sure you have Python 3.9 or newer and install the required libraries:
 
-```bash
+```markdown
 pip install -r requirements.txt
 
 ### 2️⃣ Extract intermediate features
